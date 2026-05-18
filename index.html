@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infografía - Operaciones Binarias</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      padding: 20px;
+      color: #222;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .header {
+      background: linear-gradient(135deg, #4b0082, #6a0dad);
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 46px;
+      margin-bottom: 10px;
+    }
+
+    .header h2 {
+      font-size: 24px;
+      font-weight: normal;
+    }
+
+    .intro {
+      padding: 30px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px 30px;
+    }
+
+    .card {
+      border-radius: 18px;
+      padding: 25px;
+      color: white;
+      min-height: 250px;
+    }
+
+    .blue { background: #0077b6; }
+    .green { background: #2b9348; }
+    .orange { background: #f77f00; }
+    .purple { background: #7b2cbf; }
+
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    .card p {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 36px;
+      color: #4b0082;
+    }
+
+    .operations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .operation {
+      background: #f8f9fa;
+      border-left: 10px solid #6a0dad;
+      border-radius: 15px;
+      padding: 25px;
+    }
+
+    .operation h3 {
+      color: #4b0082;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .operation p {
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .example {
+      background: #e9ecef;
+      padding: 15px;
+      border-radius: 10px;
+      font-family: Consolas, monospace;
+      font-size: 15px;
+    }
+
+    .flow {
+      background: #240046;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .flow h2 {
+      margin-bottom: 20px;
+      font-size: 34px;
+    }
+
+    .flow-steps {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 20px;
+    }
+
+    .step {
+      background: white;
+      color: #240046;
+      padding: 15px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .footer {
+      padding: 30px;
+      text-align: center;
+      background: #10002b;
+      color: white;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    @media(max-width: 768px) {
+      .header h1 {
+        font-size: 32px;
+      }
+
+      .section-title {
+        font-size: 28px;
+      }
+
+      .flow-steps {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <h1>OPERACIONES BINARIAS DEL ÁLGEBRA RELACIONAL</h1>
+    <h2>Entity Framework + LINQ + Base de Datos Pubs</h2>
+  </div>
+
+  <div class="intro">
+    Las operaciones binarias permiten combinar y comparar información proveniente de distintas relaciones dentro de una base de datos relacional. En este taller se trabajó con la base de datos Pubs utilizando Entity Framework y consultas LINQ en C#.
+  </div>
+
+  <div class="cards">
+
+    <div class="card blue">
+      <h3>Álgebra Relacional</h3>
+      <p>
+        Conjunto de operaciones matemáticas utilizadas para consultar y manipular datos dentro de bases de datos relacionales.
+      </p>
+    </div>
+
+    <div class="card green">
+      <h3>Entity Framework</h3>
+      <p>
+        ORM de Microsoft que permite trabajar con bases de datos mediante objetos y entidades en C#.
+      </p>
+    </div>
+
+    <div class="card orange">
+      <h3>LINQ</h3>
+      <p>
+        Tecnología integrada en C# utilizada para realizar consultas declarativas sobre colecciones y bases de datos.
+      </p>
+    </div>
+
+    <div class="card purple">
+      <h3>Base de Datos Pubs</h3>
+      <p>
+        Base de datos de ejemplo orientada al manejo de información relacionada con editoriales, autores, libros y ventas.
+      </p>
+    </div>
+
+  </div>
+
+  <h2 class="section-title">Operaciones Binarias</h2>
+
+  <div class="operations">
+
+    <div class="operation">
+      <h3>Unión (∪)</h3>
+
+      <p>
+        Combina los resultados de dos consultas compatibles en un único conjunto de datos eliminando registros duplicados.
+      </p>
+
+      <div class="example">
+        Ejemplo:
+        <br><br>
+        Ciudades de autores ∪ ciudades de editoriales
+      </div>
+    </div>
+
+    <div class="operation">
+      <h3>Diferencia (−)</h3>
+
+      <p>
+        Permite identificar registros presentes en una consulta pero no en otra relación compatible.
+      </p>
+
+      <div class="example">
+        Ejemplo:
+        <br><br>
+        Ciudades de autores − ciudades de editoriales
+      </div>
+    </div>
+
+    <div class="operation">
+      <h3>Producto Cartesiano (×)</h3>
+
+      <p>
+        Combina cada fila de una tabla con todas las filas de otra, generando todas las posibles combinaciones.
+      </p>
+
+      <div class="example">
+        Ejemplo:
+        <br><br>
+        Autores × Títulos
+      </div>
+    </div>
+
+  </div>
+
+  <div class="flow">
+
+    <h2>Proceso de Desarrollo</h2>
+
+    <div class="flow-steps">
+      <div class="step">Pubs</div>
+      <div>→</div>
+      <div class="step">Entity Framework</div>
+      <div>→</div>
+      <div class="step">LINQ</div>
+      <div>→</div>
+      <div class="step">Resultados</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Las operaciones binarias permiten comprender cómo combinar, comparar y relacionar información dentro de bases de datos relacionales utilizando tecnologías modernas como Entity Framework y LINQ.
+  </div>
+
+</div>
+
+</body>
+</html>
