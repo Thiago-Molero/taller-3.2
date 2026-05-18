@@ -1,0 +1,13 @@
+C:\Users\Usuario\source\repos\p1\p1\bin\Debug\p1.exe.config
+C:\Users\Usuario\source\repos\p1\p1\bin\Debug\p1.exe
+C:\Users\Usuario\source\repos\p1\p1\bin\Debug\p1.pdb
+C:\Users\Usuario\source\repos\p1\p1\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\source\repos\p1\p1\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\source\repos\p1\p1\obj\Debug\p1.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\p1\p1\obj\Debug\p1.Form1.resources
+C:\Users\Usuario\source\repos\p1\p1\obj\Debug\p1.Properties.Resources.resources
+C:\Users\Usuario\source\repos\p1\p1\obj\Debug\p1.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\p1\p1\obj\Debug\p1.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\p1\p1\obj\Debug\p1.csproj.Up2Date
+C:\Users\Usuario\source\repos\p1\p1\obj\Debug\p1.exe
+C:\Users\Usuario\source\repos\p1\p1\obj\Debug\p1.pdb
