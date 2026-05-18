@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Infografía - Operaciones Binarias</title>
+  <title>Infografía - Álgebra Relacional</title>
   <style>
     * {
       margin: 0;
@@ -28,14 +28,14 @@
     }
 
     .header {
-      background: linear-gradient(135deg, #4b0082, #6a0dad);
+      background: linear-gradient(135deg, #002b5c, #00509d);
       color: white;
       padding: 40px;
       text-align: center;
     }
 
     .header h1 {
-      font-size: 46px;
+      font-size: 48px;
       margin-bottom: 10px;
     }
 
@@ -48,7 +48,7 @@
       padding: 30px;
       text-align: center;
       font-size: 18px;
-      line-height: 1.7;
+      line-height: 1.6;
     }
 
     .cards {
@@ -59,16 +59,16 @@
     }
 
     .card {
-      border-radius: 18px;
+      border-radius: 15px;
       padding: 25px;
       color: white;
       min-height: 250px;
     }
 
-    .blue { background: #0077b6; }
+    .blue { background: #0077cc; }
+    .purple { background: #7b2cbf; }
     .green { background: #2b9348; }
     .orange { background: #f77f00; }
-    .purple { background: #7b2cbf; }
 
     .card h3 {
       margin-bottom: 15px;
@@ -84,7 +84,7 @@
       text-align: center;
       margin-top: 40px;
       font-size: 36px;
-      color: #4b0082;
+      color: #003566;
     }
 
     .operations {
@@ -96,13 +96,13 @@
 
     .operation {
       background: #f8f9fa;
-      border-left: 10px solid #6a0dad;
+      border-left: 10px solid #00509d;
       border-radius: 15px;
       padding: 25px;
     }
 
     .operation h3 {
-      color: #4b0082;
+      color: #003566;
       margin-bottom: 15px;
       font-size: 28px;
     }
@@ -117,11 +117,11 @@
       padding: 15px;
       border-radius: 10px;
       font-family: Consolas, monospace;
-      font-size: 15px;
+      overflow-x: auto;
     }
 
     .flow {
-      background: #240046;
+      background: #003566;
       color: white;
       padding: 40px;
       text-align: center;
@@ -129,7 +129,7 @@
 
     .flow h2 {
       margin-bottom: 20px;
-      font-size: 34px;
+      font-size: 36px;
     }
 
     .flow-steps {
@@ -143,7 +143,7 @@
 
     .step {
       background: white;
-      color: #240046;
+      color: #003566;
       padding: 15px 20px;
       border-radius: 10px;
       font-weight: bold;
@@ -152,10 +152,9 @@
     .footer {
       padding: 30px;
       text-align: center;
-      background: #10002b;
+      background: #001d3d;
       color: white;
       font-size: 18px;
-      line-height: 1.6;
     }
 
     @media(max-width: 768px) {
@@ -175,118 +174,123 @@
 </head>
 <body>
 
-<div class="container">
+  <div class="container">
 
-  <div class="header">
-    <h1>OPERACIONES BINARIAS DEL ÁLGEBRA RELACIONAL</h1>
-    <h2>Entity Framework + LINQ + Base de Datos Pubs</h2>
-  </div>
-
-  <div class="intro">
-    Las operaciones binarias permiten combinar y comparar información proveniente de distintas relaciones dentro de una base de datos relacional. En este taller se trabajó con la base de datos Pubs utilizando Entity Framework y consultas LINQ en C#.
-  </div>
-
-  <div class="cards">
-
-    <div class="card blue">
-      <h3>Álgebra Relacional</h3>
-      <p>
-        Conjunto de operaciones matemáticas utilizadas para consultar y manipular datos dentro de bases de datos relacionales.
-      </p>
+    <div class="header">
+      <h1>OPERACIONES UNARIAS DEL ÁLGEBRA RELACIONAL</h1>
+      <h2>Con ADO.NET Entity Framework y Northwind</h2>
     </div>
 
-    <div class="card green">
-      <h3>Entity Framework</h3>
-      <p>
-        ORM de Microsoft que permite trabajar con bases de datos mediante objetos y entidades en C#.
-      </p>
+    <div class="intro">
+      El álgebra relacional es la base teórica de las bases de datos relacionales. 
+      Mediante Entity Framework y LINQ podemos implementar consultas declarativas 
+      eficientes utilizando la base de datos Northwind.
     </div>
 
-    <div class="card orange">
-      <h3>LINQ</h3>
-      <p>
-        Tecnología integrada en C# utilizada para realizar consultas declarativas sobre colecciones y bases de datos.
-      </p>
-    </div>
+    <div class="cards">
+      <div class="card blue">
+        <h3>¿Qué es el Álgebra Relacional?</h3>
+        <p>
+          Es un conjunto de operaciones que permite manipular datos en bases de datos relacionales mediante relaciones o tablas.
+        </p>
+      </div>
 
-    <div class="card purple">
-      <h3>Base de Datos Pubs</h3>
-      <p>
-        Base de datos de ejemplo orientada al manejo de información relacionada con editoriales, autores, libros y ventas.
-      </p>
-    </div>
+      <div class="card purple">
+        <h3>Entity Framework</h3>
+        <p>
+          ORM de Microsoft que facilita trabajar con bases de datos usando objetos y consultas LINQ en C#.
+        </p>
+      </div>
 
-  </div>
+      <div class="card green">
+        <h3>¿Qué es LINQ?</h3>
+        <p>
+          Lenguaje integrado de consultas que permite manipular datos de manera declarativa dentro de C#.
+        </p>
+      </div>
 
-  <h2 class="section-title">Operaciones Binarias</h2>
-
-  <div class="operations">
-
-    <div class="operation">
-      <h3>Unión (∪)</h3>
-
-      <p>
-        Combina los resultados de dos consultas compatibles en un único conjunto de datos eliminando registros duplicados.
-      </p>
-
-      <div class="example">
-        Ejemplo:
-        <br><br>
-        Ciudades de autores ∪ ciudades de editoriales
+      <div class="card orange">
+        <h3>Base de Datos Northwind</h3>
+        <p>
+          Base de datos de ejemplo utilizada para prácticas de sistemas de información y consultas relacionales.
+        </p>
       </div>
     </div>
 
-    <div class="operation">
-      <h3>Diferencia (−)</h3>
+    <h2 class="section-title">Operaciones Unarias</h2>
 
-      <p>
-        Permite identificar registros presentes en una consulta pero no en otra relación compatible.
-      </p>
+    <div class="operations">
 
-      <div class="example">
-        Ejemplo:
-        <br><br>
-        Ciudades de autores − ciudades de editoriales
+      <div class="operation">
+        <h3>Selección (σ)</h3>
+        <p>
+          Permite filtrar filas que cumplen una condición específica.
+        </p>
+
+        <div class="example">
+σ UnitPrice > 50 (Products)
+<br><br>
+var productos = db.Products
+.Where(p => p.UnitPrice > 50)
+.ToList();
+        </div>
+      </div>
+
+      <div class="operation">
+        <h3>Proyección (π)</h3>
+        <p>
+          Permite seleccionar columnas específicas de una tabla.
+        </p>
+
+        <div class="example">
+π ProductName, UnitPrice (Products)
+<br><br>
+var productos = db.Products
+.Select(p => new {
+    p.ProductName,
+    p.UnitPrice
+});
+        </div>
+      </div>
+
+      <div class="operation">
+        <h3>Renombramiento (ρ)</h3>
+        <p>
+          Permite cambiar nombres de atributos para mejorar claridad.
+        </p>
+
+        <div class="example">
+ρ NombreProducto, Precio (Products)
+<br><br>
+var productos = db.Products
+.Select(p => new {
+    NombreProducto = p.ProductName,
+    Precio = p.UnitPrice
+});
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flow">
+      <h2>Flujo de Trabajo</h2>
+
+      <div class="flow-steps">
+        <div class="step">Northwind</div>
+        <div>→</div>
+        <div class="step">Entity Framework</div>
+        <div>→</div>
+        <div class="step">LINQ</div>
+        <div>→</div>
+        <div class="step">Resultados</div>
       </div>
     </div>
 
-    <div class="operation">
-      <h3>Producto Cartesiano (×)</h3>
-
-      <p>
-        Combina cada fila de una tabla con todas las filas de otra, generando todas las posibles combinaciones.
-      </p>
-
-      <div class="example">
-        Ejemplo:
-        <br><br>
-        Autores × Títulos
-      </div>
+    <div class="footer">
+      El álgebra relacional permite desarrollar consultas eficientes y estructuradas en sistemas de bases de datos relacionales.
     </div>
 
   </div>
-
-  <div class="flow">
-
-    <h2>Proceso de Desarrollo</h2>
-
-    <div class="flow-steps">
-      <div class="step">Pubs</div>
-      <div>→</div>
-      <div class="step">Entity Framework</div>
-      <div>→</div>
-      <div class="step">LINQ</div>
-      <div>→</div>
-      <div class="step">Resultados</div>
-    </div>
-
-  </div>
-
-  <div class="footer">
-    Las operaciones binarias permiten comprender cómo combinar, comparar y relacionar información dentro de bases de datos relacionales utilizando tecnologías modernas como Entity Framework y LINQ.
-  </div>
-
-</div>
 
 </body>
 </html>
