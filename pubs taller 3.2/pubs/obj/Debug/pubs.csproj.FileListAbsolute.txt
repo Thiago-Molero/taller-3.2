@@ -1,0 +1,13 @@
+C:\Users\Usuario\source\repos\pubs\pubs\bin\Debug\pubs.exe.config
+C:\Users\Usuario\source\repos\pubs\pubs\bin\Debug\pubs.exe
+C:\Users\Usuario\source\repos\pubs\pubs\bin\Debug\pubs.pdb
+C:\Users\Usuario\source\repos\pubs\pubs\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\source\repos\pubs\pubs\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\source\repos\pubs\pubs\obj\Debug\pubs.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\pubs\pubs\obj\Debug\pubs.Form1.resources
+C:\Users\Usuario\source\repos\pubs\pubs\obj\Debug\pubs.Properties.Resources.resources
+C:\Users\Usuario\source\repos\pubs\pubs\obj\Debug\pubs.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\pubs\pubs\obj\Debug\pubs.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\pubs\pubs\obj\Debug\pubs.csproj.Up2Date
+C:\Users\Usuario\source\repos\pubs\pubs\obj\Debug\pubs.exe
+C:\Users\Usuario\source\repos\pubs\pubs\obj\Debug\pubs.pdb
