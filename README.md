@@ -1,14 +1,15 @@
-Taller-3.2
-
-# Taller 3.2 – Operaciones Binarias del Álgebra Relacional
+# Taller 3 – Álgebra Relacional con Entity Framework
 
 ## Descripción del Proyecto
 
-El presente proyecto tiene como finalidad comprender y aplicar las operaciones binarias del álgebra relacional utilizando ADO.NET Entity Framework, LINQ y la base de datos Pubs.
+El presente proyecto tiene como finalidad comprender y aplicar las operaciones fundamentales del álgebra relacional utilizando ADO.NET Entity Framework, LINQ y bases de datos relacionales.
 
-Durante el desarrollo del taller se implementaron diferentes consultas relacionadas con las operaciones de unión, diferencia y producto cartesiano, permitiendo manipular información de forma declarativa mediante C# y Entity Framework.
+El trabajo se divide en dos partes:
 
-La base de datos Pubs fue utilizada para trabajar con escenarios relacionados con editoriales, autores, libros, ventas y tiendas.
+- Taller 3.1 → Operaciones Unarias utilizando la base de datos Northwind.
+- Taller 3.2 → Operaciones Binarias utilizando la base de datos Pubs.
+
+Durante el desarrollo del proyecto se implementaron diferentes consultas declarativas en C# para manipular información mediante Entity Framework y LINQ.
 
 ---
 
@@ -16,17 +17,17 @@ La base de datos Pubs fue utilizada para trabajar con escenarios relacionados co
 
 ## Objetivo General
 
-Aplicar operaciones binarias del álgebra relacional utilizando Entity Framework y LINQ sobre la base de datos Pubs.
+Aplicar operaciones del álgebra relacional utilizando Entity Framework y LINQ en bases de datos relacionales.
 
 ---
 
 ## Objetivos Específicos
 
-- Implementar operaciones de unión entre conjuntos compatibles.
-- Desarrollar consultas utilizando diferencia de conjuntos.
-- Aplicar producto cartesiano entre entidades de la base de datos.
-- Manipular datos mediante consultas declarativas utilizando LINQ.
-- Comprender el comportamiento de las operaciones binarias dentro del modelo relacional.
+- Implementar operaciones unarias y binarias del álgebra relacional.
+- Manipular información mediante consultas declarativas.
+- Utilizar LINQ para desarrollar consultas organizadas y legibles.
+- Comprender el funcionamiento de las operaciones relacionales en escenarios prácticos.
+- Fortalecer habilidades relacionadas con acceso y manipulación de datos.
 
 ---
 
@@ -37,18 +38,31 @@ Aplicar operaciones binarias del álgebra relacional utilizando Entity Framework
 - ADO.NET Entity Framework
 - LINQ
 - SQL Server
-- Base de datos Pubs
 - Visual Studio
 - GitHub
 
 ---
 
-# Base de Datos Utilizada
+# Bases de Datos Utilizadas
 
-El proyecto utiliza la base de datos Pubs, una base de datos de ejemplo orientada al manejo de información relacionada con editoriales y ventas.
+## Northwind
 
-Entre las principales entidades utilizadas se encuentran:
+Base de datos orientada a la gestión comercial de productos, clientes, pedidos y empleados.
 
+Entidades utilizadas:
+- Products
+- Customers
+- Categories
+- Orders
+- Employees
+
+---
+
+## Pubs
+
+Base de datos orientada al manejo de información relacionada con editoriales, autores y ventas.
+
+Entidades utilizadas:
 - Authors
 - Titles
 - Publishers
@@ -57,35 +71,67 @@ Entre las principales entidades utilizadas se encuentran:
 
 ---
 
-# Operaciones Implementadas
+# Taller 3.1 – Operaciones Unarias
 
-## Unión (∪)
+En esta sección se implementaron operaciones unarias del álgebra relacional utilizando la base de datos Northwind.
 
-Se desarrollaron consultas para combinar conjuntos compatibles eliminando duplicados.
+## Operaciones Implementadas
 
-Ejemplos implementados:
+### Selección (σ)
+
+Consultas utilizadas para filtrar registros según condiciones específicas.
+
+Ejemplos:
+- Productos con precio mayor a 50
+- Clientes pertenecientes a México
+- Productos con stock dentro de un rango
+
+---
+
+### Proyección (π)
+
+Consultas utilizadas para seleccionar atributos específicos de las entidades.
+
+Ejemplos:
+- Nombre y precio de productos
+- Nombre y país de clientes
+- Categorías registradas
+
+---
+
+# Taller 3.2 – Operaciones Binarias
+
+En esta sección se implementaron operaciones binarias del álgebra relacional utilizando la base de datos Pubs.
+
+## Operaciones Implementadas
+
+### Unión (∪)
+
+Consultas utilizadas para combinar conjuntos compatibles eliminando duplicados.
+
+Ejemplos:
 - Ciudades de autores y editoriales
 - Estados de autores y tiendas
 - Nombres de editoriales y tiendas
 
 ---
 
-## Diferencia (−)
+### Diferencia (−)
 
-Se implementaron consultas para identificar registros presentes en una consulta pero no en otra.
+Consultas utilizadas para identificar registros presentes en una consulta pero no en otra.
 
-Ejemplos implementados:
+Ejemplos:
 - Ciudades de autores que no aparecen en editoriales
 - Estados de tiendas que no aparecen en autores
 - Editoriales sin coincidencia con tiendas
 
 ---
 
-## Producto Cartesiano (×)
+### Producto Cartesiano (×)
 
-Se desarrollaron consultas para generar todas las posibles combinaciones entre registros de diferentes entidades.
+Consultas utilizadas para generar todas las posibles combinaciones entre registros.
 
-Ejemplos implementados:
+Ejemplos:
 - Autores y títulos
 - Tiendas y editoriales
 - Autores y tiendas
@@ -94,13 +140,20 @@ Ejemplos implementados:
 
 # Estructura del Proyecto
 
-```text id="d84f0m"
-Taller3.2/
+```text
+Taller3/
 │
-├── Models/
-├── Data/
-├── Queries/
-├── Screenshots/
-├── Informe/
+├── Taller3.1/
+│   ├── Models/
+│   ├── Queries/
+│   ├── Screenshots/
+│   └── Informe/
+│
+├── Taller3.2/
+│   ├── Models/
+│   ├── Queries/
+│   ├── Screenshots/
+│   └── Informe/
+│
 ├── README.md
-└── Taller3.2.sln
+└── index.html
